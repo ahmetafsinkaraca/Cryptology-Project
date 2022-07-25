@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AuthyMe" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-5Q4FIHQ\SQLEXPRESS;Initial Catalog=AuthyMe;Integrated Security=True" SettingsObjectName="AuthyMe.Properties.Settings" SettingsPropertyName="AuthyMeConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AESLoginTable" Member="AESLoginTables">
+    <Type Name="AESLoginTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="encryptedText" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
